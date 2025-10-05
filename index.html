@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MADAS SaaS Platform - Launch Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.7;
+            }
+        }
+    </style>
+</head>
+
+<body class="gradient-bg min-h-screen">
+    <!-- Header -->
+    <header class="text-center py-12">
+        <div class="container mx-auto px-4">
+            <div class="pulse-animation">
+                <i class="fas fa-rocket text-6xl text-white mb-6"></i>
+            </div>
+            <h1 class="text-5xl font-bold text-white mb-4">MADAS SaaS Platform</h1>
+            <p class="text-xl text-white/80 mb-8">Complete Business Management Solution</p>
+            <div class="flex justify-center space-x-4 text-sm text-white/60">
+                <span class="flex items-center">
+                    <i class="fas fa-check-circle mr-2"></i>
+                    Production Ready
+                </span>
+                <span class="flex items-center">
+                    <i class="fas fa-cloud mr-2"></i>
+                    Cloud Deployed
+                </span>
+                <span class="flex items-center">
+                    <i class="fas fa-shield-alt mr-2"></i>
+                    Enterprise Grade
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 pb-16">
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+            <!-- Marketing Website Card -->
+            <div class="card-hover bg-white rounded-2xl shadow-xl p-8 text-center">
+                <div
+                    class="bg-gradient-to-r from-blue-500 to-purple-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-globe text-white text-2xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Marketing Website</h2>
+                <p class="text-gray-600 mb-6">Beautiful landing page with features, pricing, and customer testimonials
+                </p>
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-500">Framework:</span>
+                        <span class="font-semibold text-blue-600">Next.js</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-500">Status:</span>
+                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Ready</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-500">Features:</span>
+                        <span class="text-xs text-gray-600">Landing, Pricing, FAQ</span>
+                    </div>
+                </div>
+                <button onclick="openApp('marketing-website')"
+                    class="w-full mt-6 bg-gradient-to-r from-blue-500 to-purple-600 text-white py-3 px-6 rounded-lg font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300">
+                    <i class="fas fa-external-link-alt mr-2"></i>
+                    Launch Marketing Site
+                </button>
+            </div>
+
+            <!-- Admin Dashboard Card -->
+            <div class="card-hover bg-white rounded-2xl shadow-xl p-8 text-center">
+                <div
+                    class="bg-gradient-to-r from-green-500 to-teal-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-cogs text-white text-2xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Admin Dashboard</h2>
+                <p class="text-gray-600 mb-6">Complete admin panel for managing clients, subscriptions, and analytics
+                </p>
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-500">Framework:</span>
+                        <span class="font-semibold text-green-600">Next.js</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-500">Status:</span>
+                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Ready</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-500">Features:</span>
+                        <span class="text-xs text-gray-600">Analytics, Clients, Support</span>
+                    </div>
+                </div>
+                <button onclick="openApp('admin-dashboard')"
+                    class="w-full mt-6 bg-gradient-to-r from-green-500 to-teal-600 text-white py-3 px-6 rounded-lg font-semibold hover:from-green-600 hover:to-teal-700 transition-all duration-300">
+                    <i class="fas fa-tachometer-alt mr-2"></i>
+                    Launch Admin Dashboard
+                </button>
+            </div>
+
+            <!-- Client App Card -->
+            <div class="card-hover bg-white rounded-2xl shadow-xl p-8 text-center">
+                <div
+                    class="bg-gradient-to-r from-purple-500 to-pink-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-store text-white text-2xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Client App</h2>
+                <p class="text-gray-600 mb-6">Business management system with products, inventory, and sales tracking
+                </p>
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-500">Framework:</span>
+                        <span class="font-semibold text-purple-600">Next.js + Firebase</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-500">Status:</span>
+                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Ready</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-500">Features:</span>
+                        <span class="text-xs text-gray-600">Products, Orders, Analytics</span>
+                    </div>
+                </div>
+                <button onclick="openApp('client-app')"
+                    class="w-full mt-6 bg-gradient-to-r from-purple-500 to-pink-600 text-white py-3 px-6 rounded-lg font-semibold hover:from-purple-600 hover:to-pink-700 transition-all duration-300">
+                    <i class="fas fa-shopping-cart mr-2"></i>
+                    Launch Client App
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Quick Actions Section -->
+        <div class="mt-16 bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center">
+            <h3 class="text-2xl font-bold text-white mb-6">Quick Actions</h3>
+            <div class="grid md:grid-cols-4 gap-4">
+                <button onclick="openGitHub()"
+                    class="bg-white/20 hover:bg-white/30 text-white py-3 px-4 rounded-lg transition-all duration-300">
+                    <i class="fab fa-github mb-2 block text-xl"></i>
+                    <span class="text-sm">GitHub Repo</span>
+                </button>
+                <button onclick="openVercel()"
+                    class="bg-white/20 hover:bg-white/30 text-white py-3 px-4 rounded-lg transition-all duration-300">
+                    <i class="fas fa-cloud mb-2 block text-xl"></i>
+                    <span class="text-sm">Vercel Dashboard</span>
+                </button>
+                <button onclick="openFirebase()"
+                    class="bg-white/20 hover:bg-white/30 text-white py-3 px-4 rounded-lg transition-all duration-300">
+                    <i class="fas fa-fire mb-2 block text-xl"></i>
+                    <span class="text-sm">Firebase Console</span>
+                </button>
+                <button onclick="openDocs()"
+                    class="bg-white/20 hover:bg-white/30 text-white py-3 px-4 rounded-lg transition-all duration-300">
+                    <i class="fas fa-book mb-2 block text-xl"></i>
+                    <span class="text-sm">Documentation</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Status Section -->
+        <div class="mt-12 bg-white rounded-2xl p-8">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Platform Status</h3>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-code text-green-600 text-xl"></i>
+                    </div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Development</h4>
+                    <p class="text-sm text-gray-600">All applications built and tested</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-cloud-upload-alt text-blue-600 text-xl"></i>
+                    </div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Deployment</h4>
+                    <p class="text-sm text-gray-600">Ready for Vercel deployment</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-cogs text-purple-600 text-xl"></i>
+                    </div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Automation</h4>
+                    <p class="text-sm text-gray-600">GitHub Actions configured</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-8 text-white/60">
+        <p>&copy; 2024 MADAS SaaS Platform. All rights reserved.</p>
+        <p class="text-sm mt-2">Built with Next.js, Firebase, and deployed on Vercel</p>
+    </footer>
+
+    <script>
+        function openApp(appName) {
+            const appUrls = {
+                'marketing-website': './marketing-website/',
+                'admin-dashboard': './admin-dashboard/',
+                'client-app': './client-app/'
+            };
+
+            const url = appUrls[appName];
+            if (url) {
+                // Add loading effect
+                const button = event.target.closest('button');
+                const originalText = button.innerHTML;
+                button.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Loading...';
+                button.disabled = true;
+
+                // Open the application
+                setTimeout(() => {
+                    window.open(url, '_blank');
+                    button.innerHTML = originalText;
+                    button.disabled = false;
+                }, 1000);
+            }
+        }
+
+        function openGitHub() {
+            window.open('https://github.com/Hussein-Osamaa/Undo', '_blank');
+        }
+
+        function openVercel() {
+            window.open('https://vercel.com/dashboard', '_blank');
+        }
+
+        function openFirebase() {
+            window.open('https://console.firebase.google.com/project/undo-12', '_blank');
+        }
+
+        function openDocs() {
+            // Open the main documentation
+            window.open('./README.md', '_blank');
+        }
+
+        // Add some interactive effects
+        document.addEventListener('DOMContentLoaded', function () {
+            // Add hover effects to cards
+            const cards = document.querySelectorAll('.card-hover');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function () {
+                    this.style.transform = 'translateY(-10px) scale(1.02)';
+                });
+
+                card.addEventListener('mouseleave', function () {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+
+            // Add click animation to buttons
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(button => {
+                button.addEventListener('click', function () {
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                    }, 150);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
